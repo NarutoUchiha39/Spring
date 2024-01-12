@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class dynamicRouting {
     @RequestMapping(method = RequestMethod.GET,value = "/{okii}/{name}")
     public String DynamicRoute(@PathVariable String name,@PathVariable String okii){
-        return name+okii;
+        return name+" "+okii;
     }
 }
